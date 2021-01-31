@@ -1,0 +1,29 @@
+{{!-- Consulta geral de empresas --}}
+
+<h1 class="h1consulta">Empresas</h1>
+<table id="customers" class="content-table">
+    <thead>
+    <tr class="head-table">
+                <td>Consultar</td>
+        <td>Editar</td>
+        <td>Razão Social</td>
+        <td>CNPJ</td>
+        <td>I.Estadual</td>
+        <td>Telefone</td>
+        <td>Data Cadastro</td>
+
+
+    </tr>
+    <thead>
+    {{#data}} 
+    <tr>
+        <td><a  href="/consultar/{{id}}"><img src="/img/Search.png"></a></td>
+        <td><a  href="update/{{id}}"><img src="/img/update_left_rotation_24px.png"></a></td>
+        <td>{{empresa}}</td>
+        <td>{{cnpj}}</td>
+        <td>{{ie}}</td>
+        <td>{{telemp}}</td>
+        <td>{{dt_inclusao}}</td>
+    </tr>
+    {{/data}}
+</table>
