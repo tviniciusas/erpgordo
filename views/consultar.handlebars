@@ -4,18 +4,17 @@
 <table id="customers" class="content-table">
     <thead>
     <tr class="head-table">
-                <td>Consultar</td>
-        <td>Editar</td>
+        <td>Consultar</td>
         <td>Razão Social</td>
         <td>CNPJ</td>
         <td>I.Estadual</td>
         <td>Telefone</td>
-        <td>Data Cadastro</td>
+        <td>Data</td>
     </tr>
     <thead>
     {{#data}} 
     <tr>
-        <td><a  href="/consultar/{{id}}"><img src="/img/Search.png"></a></td>
+        <td><a  href="/consultar/{{id}}"></a><img src="/img/Search.png"></a></td>
         <td>{{empresa}}</td>
         <td>{{cnpj}}</td>
         <td>{{ie}}</td>

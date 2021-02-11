@@ -6,7 +6,6 @@ const urlencondeParser = bodyParser.urlencoded({extended:false})
 const PORT = 3001
 const conexaoMySql = require('./conexao')
 let conexao = new conexaoMySql
-const urlAtual = "localhost.com:3000"
 
 app.listen(PORT,function(req,res){
 
@@ -14,6 +13,8 @@ app.listen(PORT,function(req,res){
     console.log("http://localhost.com:" + PORT )
 
 })
+
+
 //Template engine
 app.engine("handlebars",handlebars({defaultLayout: 'main'}))
 app.set('view engine','handlebars')
